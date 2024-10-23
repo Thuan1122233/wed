@@ -17,7 +17,7 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="./index.html">Trang chủ</a></li>
-                    <li class="nav-item"><a href="">Giới thiệu</a></li>
+                    <li class="nav-item"><a href="./gioithieu.html">Giới thiệu</a></li>
                     <li class="nav-item nav-item-menu"><a href="./sanphamthu.html">Sản phẩm 
                         <div class="menu">
                             <a href="#" class="menu-item">Pate</a>
@@ -43,7 +43,7 @@
                 </ul>
             </nav>
             <nav class="icon">
-                <a href="" class="icon-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a  class="icon-link"><i class="fa-solid fa-magnifying-glass"></i></a>
                 <div class="seach-box">
                     <p class="seach-box-1">TÌM KIẾM</p>
                     <input class="seach-box-2" type="text" placeholder="Nhập từ khóa tìm kiếm...">
@@ -303,5 +303,30 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchIcon = document.querySelector('.icon-link'); 
+            const searchInput = document.querySelector('.seach-box'); 
+    
+         
+    
+            searchIcon.addEventListener('click', (event) => {
+                event.stopPropagation(); // Ngăn chặn sự kiện click lan truyền
+                if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+                    searchInput.style.display = 'block'; // Hiện ô tìm kiếm
+                    searchInput.focus(); // Đặt con trỏ vào ô tìm kiếm
+                } else {
+                    searchInput.style.display = 'none'; // Ẩn ô tìm kiếm
+                }
+            });
+    
+            // Ẩn ô tìm kiếm khi click ra ngoài
+            document.addEventListener('click', () => {
+                searchInput.style.display = 'none'; // Ẩn ô tìm kiếm
+            });
+        });
+    </script>
+    
+    
 </body>
 </html>

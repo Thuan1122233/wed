@@ -43,13 +43,13 @@ export const showlistgiamgia = () => {
 }
 
 const show1thuonghieu = (th) => {
-    return `<div>${th.ten}</div> `;
-  }
-  export const showlistthuonghieu = async () =>{
-     let thuonghieu_arr = await  fetch("http://localhost:3000/thuong_hieu")
-      .then ( res => res.json())
-      .then ( data  => {return data});
-     let str=``;
-     thuonghieu_arr.forEach ( th => str+= show1thuonghieu(th) )
-     return str;
-  }
+   return `<div>${th.ten}</div> `;
+ }
+ export const showlistthuonghieu = async () =>{
+    let thuonghieu_arr = await  fetch("http://localhost:3000/thuong_hieu")
+     .then ( res => res.json())
+     .then ( data  => {return data});
+    let str=``;
+    thuonghieu_arr.forEach ( th => str+= show1thuonghieu(th) )
+    return str;
+ }

@@ -265,7 +265,7 @@ a{
     right: 180px;
     color: var(--text-color);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* display: none; */
+    display: none;
 }
 
 .seach-box::before{
@@ -341,8 +341,8 @@ a{
     /* background-color: aqua; */
     position: absolute;
     width: 100%;
-    height: 20px;
-    top: -20px;
+    height: 10px;
+    top: -7px;
 }
 
 @keyframes fakein {
@@ -737,3 +737,72 @@ body {
 }
 
 
+
+#container img{
+    background-size: contain;
+    height: 70%;
+    width: 70%;
+}
+
+#listkhoahoc {  
+   margin-top: 40px;
+}
+h2{
+    color: var(--main-color);
+}
+
+h4{
+    margin-top: -7px;
+    margin-bottom: 10px;   
+    color: var(--main-color); 
+}
+p{
+    margin-top: -10px;
+    margin-bottom: 10px;   
+}
+#container h2 { 
+    text-align: center; text-transform: uppercase;
+    
+ }
+#container #data { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; }
+#container #data > div { 
+    width: 20%; 
+    height: 300px; 0px;
+    /* border: 2px solid black ; */
+    margin: 15px 0.2%; 
+    text-align: center;
+    font-size: 1.3em; 
+    /* box-shadow: 2px 2px 2px lightseagreen;  */
+    border-radius: 5px;
+    padding:20px; 
+    line-height: 150%; 
+}
+
+
+
+ 
+
+
+
+
+#listthuonghieu { background-color: beige; padding:40px 0}
+#listthuonghieu h2 { text-align: center; text-transform: uppercase; }
+#listthuonghieu #data { 
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+#listthuonghieu #data > div { 
+    border: 1px solid black ; 
+    margin: 15px 0.5%; 
+    text-align: center; 
+    font-size: 1.2em; 
+    border-radius: 50%;
+    padding: 30px 0;
+    box-shadow: 2px 2px 2px black; 
+    height: 130px; 
+    width: 130px;
+}
